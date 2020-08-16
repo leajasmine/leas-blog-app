@@ -4,17 +4,7 @@
   <div class="container">
 
     <nav class="level">
-
-      <!-- left side -->
-      <div class="left-level">
-        <p class="level-item">
-          <%= link_to "New", new_post_path(@post), data: { confirm: "This will bring you to a new list. Press ok to continue." }, class: "button is-dark" %>
-        </p>
-      </div>
-
-      <!-- right side -->
-
-      <div class="level-right">
+      <div class="level-item">
          <p class="level-item">
           <%= link_to "Edit", edit_post_path(@post), class: "button" %>
         </p>
