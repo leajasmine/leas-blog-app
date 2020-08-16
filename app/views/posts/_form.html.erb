@@ -13,7 +13,8 @@
     </div>
   </div>
 
-  <%= f.button :submit, class: "button is-primary" %>
+  <%=  f.button :submit, value: "#{f.object.new_record? ? 'Save' : 'Update'}", class: 'button is-dark' %>
+
   <% end %>
 
   </div>

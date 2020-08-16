@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action : find_post, only: [:show, :update, :edit, :destroy]
+  before_action :find_post, only: [:show, :update, :edit, :destroy]
 
   def index
     @posts = Post.all.order("created_at DESC")
